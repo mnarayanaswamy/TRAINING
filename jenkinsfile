@@ -1,0 +1,23 @@
+pipeline {
+    agent any 
+
+    stages {
+        stage('Build') { 
+            steps { 
+                sh 'hostname'
+                sh 'echo running make'
+            }
+        }
+        stage('Test'){
+            steps {
+                sh '/sbin/ifconfig -a'
+                sh 'echo done' 
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'pwd'
+            }
+        }
+    }
+}
