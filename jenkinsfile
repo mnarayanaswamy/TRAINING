@@ -18,6 +18,11 @@ pipeline {
             steps {
                 sh 'pwd'
             }
+            
+        stage('Build completed') {
+            steps {
+                sh 'echo build completed sucesfully'
+            }
         }
     }
 }
