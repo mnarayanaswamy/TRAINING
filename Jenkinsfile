@@ -9,7 +9,7 @@ pipeline{
     stage("maven build and deploy"){
       steps{
         
-       sh(script:'mvn deploy -s settings.xml -f pom.xml')
+       sh(script:'mvn deploy -X -s settings.xml -f pom.xml')
    
       }
     }    
