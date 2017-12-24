@@ -17,10 +17,10 @@ pipeline{
    stage("Build docker image tag and push"){
     
     steps{
-    sh "docker login -u sumeshkanayi -p Sia123"
+    sh "docker login -u mnarayan -p madhu@123"
     sh "docker build --tag tomcat ."
-    sh "docker tag tomcat sumeshkanayi/webapp:${BUILD_NUMBER}"
-    sh "docker push sumeshkanayi/webapp:${BUILD_NUMBER}"
+    sh "docker tag tomcat mnarayanaswamy/webapp:${BUILD_NUMBER}"
+    sh "docker push mnarayanaswamy/webapp:${BUILD_NUMBER}"
     
        }
      }
