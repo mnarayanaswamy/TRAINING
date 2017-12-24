@@ -1,16 +1,17 @@
-pipeline {
-  agent {
-    node {
-      label 'master'
-    }
+pipeline{
+  
+  agent{
+   label "master" 
     
   }
-  stages {
-    stage('build') {
-      steps {
-        sh '''ls
-hostname'''
+  
+  stages{
+    stage("maven build and deploy"){
+      steps{
+        
+       sh(script:'mvn deploy -s settings.xml -f trucks/pom.xml')
+   
       }
-    }
+    }    
   }
 }
