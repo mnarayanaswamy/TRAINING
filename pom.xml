@@ -33,7 +33,7 @@
   <distributionManagement>
    <snapshotRepository>
       <id>CentralNexusSnapshot</id>
-      <url>http://172.17.0.1:8081/repository/maven-snapshots/</url>
+      <url>http://172.17.0.1:8081/repository/CentralNexusSnapshot/</url>
    </snapshotRepository>
 </distributionManagement>
 </project>
