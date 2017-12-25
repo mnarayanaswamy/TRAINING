@@ -1,3 +1,0 @@
-#This is my first devops file
-# added intermediated line between first and second line.
-# this is my second line 
