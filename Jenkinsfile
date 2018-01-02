@@ -17,7 +17,7 @@ pipeline{
    stage("Build docker image tag and push"){
     
     steps{
-    sh "docker login -u mnarayan -p madhu@123"
+    sh "cat ~/my_password.txt | docker login -u mnarayanaswamy --password-stdin"
     sh "docker build --tag tomcat ."
     sh "docker tag tomcat mnarayanaswamy/webapp:${BUILD_NUMBER}"
     sh "docker push mnarayanaswamy/webapp:${BUILD_NUMBER}"
